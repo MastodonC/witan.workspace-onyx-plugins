@@ -1,4 +1,4 @@
-(defproject witan.workspace-onyx-plugins "0.1.0-SNAPSHOT"
+(defproject witan.workspace-onyx-plugins "0.1.0"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -10,4 +10,8 @@
                  [com.taoensso/carmine "2.12.2"]]
   :main ^:skip-aot witan.workspace-onyx-plugins
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}}
+  :repositories [["releases" {:url "https://clojars.org/repo"
+                              :creds :gpg}]
+                 ["snapshots" {:url "https://clojars.org/repo"
+                               :creds :gpg}]])
